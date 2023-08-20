@@ -22,8 +22,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:drawableLeft="/"
-        android:drawablePadding="5dp"
         android:text="Mohsin"
         android:textSize="20sp"
         android:textColor="@color/pink"
