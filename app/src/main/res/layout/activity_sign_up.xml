@@ -73,7 +73,7 @@
         style="@style/Widget.Material3.Button.Icon"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="@color/blue"
         android:text="Register"
         android:textSize="18sp"
@@ -99,6 +99,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:visibility="visible" />
 
     </com.google.android.material.textfield.TextInputLayout>
