@@ -10,6 +10,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
+import com.itsmohsin.instagramclone.Adapters.ViewPageAdapter
 import com.itsmohsin.instagramclone.Models.User
 import com.itsmohsin.instagramclone.SignUpActivity
 import com.itsmohsin.instagramclone.Utils.USER_NODE
@@ -18,6 +19,7 @@ import com.squareup.picasso.Picasso
 
 class ProfileFragment : Fragment() {
     private lateinit var binding: FragmentProfileBinding
+    private lateinit var viewPagerAdapter: ViewPageAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +37,12 @@ class ProfileFragment : Fragment() {
             activity?.startActivity(intent)
             activity?.finish()
         }
+        viewPagerAdapter= ViewPageAdapter(requireActivity().supportFragmentManager)
+        viewPagerAdapter.addFragments(MyPostFragment(), "My Post")
+        viewPagerAdapter.addFragments(MyReelsFragment(), "My Reels")
+        binding.viewPager.adapter=viewPagerAdapter
+        binding.tabLayout.setupWithViewPager(binding.viewPager)
+
 
         return binding.root
     }
