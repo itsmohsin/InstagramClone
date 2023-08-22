@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             if (FirebaseAuth.getInstance().currentUser == null)
                 startActivity(Intent(this, SignUpActivity::class.java))
             else
-                startActivity(Intent(this, SignUpActivity::class.java))
+                startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }, 3000)
 

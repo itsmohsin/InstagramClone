@@ -62,4 +62,7 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore-ktx")
     // Import picasso dependencies
     implementation("com.squareup.picasso:picasso:2.8")
+    // RoundedImageView dependencies
+    implementation("com.makeramen:roundedimageview:2.3.0")
+
 }
