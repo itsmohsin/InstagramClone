@@ -14,7 +14,7 @@
         android:name="com.itsmohsin.instagramclone.Fragments.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
-    <fragment
+    <dialog
         android:id="@+id/add"
         android:name="com.itsmohsin.instagramclone.Fragments.AddFragment"
         android:label="fragment_add"
