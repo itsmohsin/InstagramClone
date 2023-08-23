@@ -28,12 +28,18 @@ class PostAdapter(var context: Context, var postList: ArrayList<Post>) :Recycler
     }
 
     override fun onBindViewHolder(holder: MyHolder, position: Int) {
-        Firebase.firestore.collection(USER_NODE).document(postList.get(position).uid).get().addOnSuccessListener {
-            var user = it.toObject<User>()
-            Glide.with(context).load(user!!.image).placeholder(R.drawable.user)
-            holder.binding.tvName.text=user.name
+        try {
+            Firebase.firestore.collection(USER_NODE).document(postList.get(position).uid).get().addOnSuccessListener {
+                var user = it.toObject<User>()
+                Glide.with(context).load(user!!.image).placeholder(R.drawable.user).into(holder.binding.profileImage)
+                holder.binding.tvName.text=user.name
+            }
+
         }
-        Glide.with(context).load(postList.get(position).postUrl).placeholder(R.drawable.loading)
+        catch (e:Exception){
+
+        }
+        Glide.with(context).load(postList.get(position).postUrl).placeholder(R.drawable.loading).into(holder.binding.postImage)
         holder.binding.tvTime.text=postList.get(position).time
         holder.binding.tvCaption.text=postList.get(position).caption
 
