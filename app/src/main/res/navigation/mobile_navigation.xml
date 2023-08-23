@@ -21,7 +21,7 @@
         tools:layout="@layout/fragment_add" />
     <fragment
         android:id="@+id/reels"
-        android:name="com.itsmohsin.instagramclone.fragments.ReelsFragment"
+        android:name="com.itsmohsin.instagramclone.fragments.ReelFragment"
         android:label="fragment_reels"
         tools:layout="@layout/fragment_reels" />
     <fragment

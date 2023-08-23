@@ -2,11 +2,8 @@ package com.itsmohsin.instagramclone.Utils
 
 import android.app.ProgressDialog
 import android.net.Uri
-import android.widget.ProgressBar
 import com.google.firebase.storage.FirebaseStorage
-import com.itsmohsin.instagramclone.Post.ReelActivity
 import java.util.UUID
-import javax.security.auth.callback.Callback
 
 fun uploadImage(uri: Uri, folderName: String, callback: (String?) -> Unit) {
     var imageUrl: String? = null
@@ -37,7 +34,7 @@ fun uploadVideo(
             }
         }
         .addOnProgressListener {
-            val uploadedValue: Long = it.bytesTransferred / it.totalByteCount
+            val uploadedValue: Long = (it.bytesTransferred / it.totalByteCount) * 100
             progressDialog.setMessage("Uploaded $uploadedValue")
         }
 }
