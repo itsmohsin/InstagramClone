@@ -43,7 +43,7 @@
             android:padding="5dp"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/reels" />
+            android:src="@drawable/reel" />
 
         <TextView
             android:layout_width="wrap_content"

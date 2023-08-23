@@ -2,13 +2,12 @@ package com.itsmohsin.instagramclone.Fragments
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.itsmohsin.instagramclone.Post.PostActivity
-import com.itsmohsin.instagramclone.Post.ReelsActivity
+import com.itsmohsin.instagramclone.Post.ReelActivity
 import com.itsmohsin.instagramclone.databinding.FragmentAddBinding
 
 class AddFragment : BottomSheetDialogFragment() {
@@ -29,7 +28,7 @@ class AddFragment : BottomSheetDialogFragment() {
             activity?.finish()
         }
         binding.llReels.setOnClickListener {
-            activity?.startActivity(Intent(requireContext(), ReelsActivity::class.java))
+            activity?.startActivity(Intent(requireContext(), ReelActivity::class.java))
 
         }
         return binding.root
