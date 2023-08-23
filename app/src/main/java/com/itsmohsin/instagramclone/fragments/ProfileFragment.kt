@@ -1,4 +1,4 @@
-package com.itsmohsin.instagramclone.Fragments
+package com.itsmohsin.instagramclone.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -39,7 +39,7 @@ class ProfileFragment : Fragment() {
         }
         viewPagerAdapter= ViewPageAdapter(requireActivity().supportFragmentManager)
         viewPagerAdapter.addFragments(MyPostFragment(), "My Post")
-        viewPagerAdapter.addFragments(MyReelsFragment(), "My Reels")
+        viewPagerAdapter.addFragments(MyReelFragment(), "My Reels")
         binding.viewPager.adapter=viewPagerAdapter
         binding.tabLayout.setupWithViewPager(binding.viewPager)
 

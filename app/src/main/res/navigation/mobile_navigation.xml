@@ -6,27 +6,27 @@
     app:startDestination="@id/home">
     <fragment
         android:id="@+id/home"
-        android:name="com.itsmohsin.instagramclone.Fragments.HomeFragment"
+        android:name="com.itsmohsin.instagramclone.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/search"
-        android:name="com.itsmohsin.instagramclone.Fragments.SearchFragment"
+        android:name="com.itsmohsin.instagramclone.fragments.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <dialog
         android:id="@+id/add"
-        android:name="com.itsmohsin.instagramclone.Fragments.AddFragment"
+        android:name="com.itsmohsin.instagramclone.fragments.AddFragment"
         android:label="fragment_add"
         tools:layout="@layout/fragment_add" />
     <fragment
         android:id="@+id/reels"
-        android:name="com.itsmohsin.instagramclone.Fragments.ReelsFragment"
+        android:name="com.itsmohsin.instagramclone.fragments.ReelsFragment"
         android:label="fragment_reels"
         tools:layout="@layout/fragment_reels" />
     <fragment
         android:id="@+id/profile"
-        android:name="com.itsmohsin.instagramclone.Fragments.ProfileFragment"
+        android:name="com.itsmohsin.instagramclone.fragments.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

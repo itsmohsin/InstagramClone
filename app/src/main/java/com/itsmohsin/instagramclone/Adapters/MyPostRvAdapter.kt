@@ -8,13 +8,13 @@ import com.itsmohsin.instagramclone.Models.Post
 import com.itsmohsin.instagramclone.databinding.MyPostRvDesignBinding
 import com.squareup.picasso.Picasso
 
-class MyPostRvAdaptor(var context: Context, var postList: ArrayList<Post>) :
-    RecyclerView.Adapter<MyPostRvAdaptor.ViewHolder>() {
+class MyPostRvAdapter(var context: Context, var postList: ArrayList<Post>) :
+    RecyclerView.Adapter<MyPostRvAdapter.ViewHolder>() {
     inner class ViewHolder(var binding: MyPostRvDesignBinding) :
         RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var binding = MyPostRvDesignBinding.inflate(LayoutInflater.from(context), parent,false)
+        var binding = MyPostRvDesignBinding.inflate(LayoutInflater.from(context), parent, false)
         return ViewHolder(binding)
     }
 

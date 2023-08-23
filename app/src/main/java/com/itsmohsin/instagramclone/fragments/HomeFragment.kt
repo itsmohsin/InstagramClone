@@ -1,4 +1,4 @@
-package com.itsmohsin.instagramclone.Fragments
+package com.itsmohsin.instagramclone.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
