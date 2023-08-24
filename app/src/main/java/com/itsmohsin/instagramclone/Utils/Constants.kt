@@ -6,4 +6,5 @@ const val POST = "Post"
 const val POST_FOLDER = "PostImages"
 const val REEL = "Reel"
 const val REEL_FOLDER = "ReelVideos"
+const val FOLLOW = "Follow"
 
