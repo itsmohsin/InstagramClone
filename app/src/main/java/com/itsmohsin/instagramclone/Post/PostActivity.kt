@@ -61,7 +61,7 @@ class PostActivity : AppCompatActivity() {
                     var user = it.toObject<User>()!!
                     val post: Post = Post(
                         postUrl = imageUrl!!,
-                        caption = binding.tfCaption.editText?.text.toString(),
+                        caption = binding.caption.editText?.text.toString(),
                         uid = Firebase.auth.currentUser!!.uid,
                         time = System.currentTimeMillis().toString()
                     )
